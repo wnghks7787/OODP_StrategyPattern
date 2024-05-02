@@ -8,6 +8,6 @@ public class Atom extends Robot{
     }
 
     public void move() {
-        System.out.println("I can only fly.");
+        System.out.println("I can only walk.");
     }
 }
