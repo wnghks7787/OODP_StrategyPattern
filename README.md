@@ -19,3 +19,11 @@ First, you can draw UML Class diagram like this:
 - If I want to change existing robot's attack/move methods, how can I reach there?
   - For example, How can I make Atom to attack with missile?
 - How can I make new robots, for example new-mighty *Sunguard* and give TaekwonV's missile attack system?
+
+### Code Ver_2
+Modified: Atom can only walk instead of flying.
+
+#### Problem
+- You need to modify existing code because of new function. It against OCP(Open/Closed Principle)
+- Atom Class and TaekwonV Class has same code. It occurs redundancy.
+  - It is hard to maintain consistently when number of robots increases.
