@@ -27,3 +27,26 @@ Modified: Atom can only walk instead of flying.
 - You need to modify existing code because of new function. It against OCP(Open/Closed Principle)
 - Atom Class and TaekwonV Class has same code. It occurs redundancy.
   - It is hard to maintain consistently when number of robots increases.
+
+### Code Ver_3
+Now, let's add new robot, *Sunguard* !
+
+<img width="400" alt="image" src="https://github.com/wnghks7787/OODP_StrategyPattern/assets/74361097/a8bef10e-303e-44a0-b578-fbdf461163e7">
+
+#### Problem
+- If new *Sunguard* wants existing moving / attacking process, we need to code it everything again.
+- If we have new moving / attacking process, we need to modify whole codes.
+
+#### Solution
+- You need to find where to change.
+  - In this case, *Attack* and *Move* .
+- Encapsulate it (Make methods to Class!).
+- Hide move / attack class for client.
+- Make ***Interface*** for *Attack* and *Move* .
+- Make class for run these things.
+
+<img width="600" alt="image" src="https://github.com/wnghks7787/OODP_StrategyPattern/assets/74361097/b6ba42f9-f7b8-41ae-8175-c5ef1920ca3a">
+
+As we can see this diagram, Robot need to access only Attack Strategy and Moving strategy.
+When we need to add new Attack process, we can just add new class implement with *Attack Strategy* .
+We don't need to modify Robot Class for change new strategy.
