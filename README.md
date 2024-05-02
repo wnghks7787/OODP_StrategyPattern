@@ -50,3 +50,18 @@ Now, let's add new robot, *Sunguard* !
 As we can see this diagram, Robots.Robot need to access only Attack Strategy and Moving strategy.
 When we need to add new Attack process, we can just add new class implement with *Attack Strategy* .
 We don't need to modify Robots.Robot Class for change new strategy.
+
+## Strategy Pattern
+Strategy Design Pattern is the pattern that can easily change your strategy.
+In this case, the term *Strategy* means "Algorithms or business rules that can reach some goals".
+We can use this pattern when we need to change our strategy easily. Especially in game, we can use this pattern to use player's attack or act strategy.
+
+Many algorithms which can solve same problems are encapsulation and we can just change this to make easy to solve problem.
+
+### Collaboration
+
+<img width="500" alt="image" src="https://github.com/wnghks7787/OODP_StrategyPattern/assets/74361097/242ca44a-3860-4787-b229-1254573e700e">
+
+- Strategy: Notice that how can call algorithm outside of the interface / abstract class.
+- ConcreteStrategy: Real Algorithms that noticed in strategy pattern.
+- Context: Use strategy pattern. If needed, it can change concrete strategy, so it provide setter method.
