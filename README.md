@@ -5,10 +5,10 @@
     - Understand key points about Strategy Pattern with example.
 
 ## Example Situation
-Let's assume that we are making Robots. We have two robots, ***Atom*** and ***TaekwonV***.
+Let's assume that we are making Robots. We have two robots, ***Robots.Atom*** and ***Robots.TaekwonV***.
 They are each have *Attack* and *Move* methods.
-Atom can punch to attack and fly to move.
-TaekwonV can missile to attack and walk to move.
+Robots.Atom can punch to attack and fly to move.
+Robots.TaekwonV can missile to attack and walk to move.
 
 ### Code Ver_1
 First, you can draw UML Class diagram like this:
@@ -17,15 +17,15 @@ First, you can draw UML Class diagram like this:
 
 #### Problem
 - If I want to change existing robot's attack/move methods, how can I reach there?
-  - For example, How can I make Atom to attack with missile?
-- How can I make new robots, for example new-mighty *Sunguard* and give TaekwonV's missile attack system?
+  - For example, How can I make Robots.Atom to attack with missile?
+- How can I make new robots, for example new-mighty *Sunguard* and give Robots.TaekwonV's missile attack system?
 
 ### Code Ver_2
-Modified: Atom can only walk instead of flying.
+Modified: Robots.Atom can only walk instead of flying.
 
 #### Problem
 - You need to modify existing code because of new function. It against OCP(Open/Closed Principle)
-- Atom Class and TaekwonV Class has same code. It occurs redundancy.
+- Robots.Atom Class and Robots.TaekwonV Class has same code. It occurs redundancy.
   - It is hard to maintain consistently when number of robots increases.
 
 ### Code Ver_3
@@ -47,6 +47,6 @@ Now, let's add new robot, *Sunguard* !
 
 <img width="600" alt="image" src="https://github.com/wnghks7787/OODP_StrategyPattern/assets/74361097/b6ba42f9-f7b8-41ae-8175-c5ef1920ca3a">
 
-As we can see this diagram, Robot need to access only Attack Strategy and Moving strategy.
+As we can see this diagram, Robots.Robot need to access only Attack Strategy and Moving strategy.
 When we need to add new Attack process, we can just add new class implement with *Attack Strategy* .
-We don't need to modify Robot Class for change new strategy.
+We don't need to modify Robots.Robot Class for change new strategy.
