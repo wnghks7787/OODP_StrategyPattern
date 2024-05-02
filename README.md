@@ -12,6 +12,7 @@ TaekwonV can missile to attack and walk to move.
 
 ### Code Ver_1
 First, you can draw UML Class diagram like this:
+
 <img width="400" alt="image" src="https://github.com/wnghks7787/OODP_StrategyPattern/assets/74361097/38059049-002e-4e1c-876e-229f2665393e">
 
 #### Problem
