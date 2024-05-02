@@ -23,7 +23,7 @@ First, you can draw UML Class diagram like this:
 ### Code Ver_2
 Modified: Atom can only walk instead of flying.
 
-#### Problem
+#### Problem of modified code
 - You need to modify existing code because of new function. It against OCP(Open/Closed Principle)
 - Atom Class and TaekwonV Class has same code. It occurs redundancy.
   - It is hard to maintain consistently when number of robots increases.
