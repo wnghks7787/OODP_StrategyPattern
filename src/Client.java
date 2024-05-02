@@ -1,13 +1,29 @@
+import Attacking.MissileStrategy;
+import Attacking.PunchStrategy;
+import Moving.FlyingStrategy;
+import Moving.WalkingStrategy;
+import Robots.Atom;
+import Robots.Robot;
+import Robots.TaekwonV;
+
 public class Client {
     public static void main(String[] args) {
         Robot taekwonV = new TaekwonV("TaekwonV");
         Robot atom = new Atom("Atom");
 
-        System.out.println("My name is" + taekwonV.getName());
+        taekwonV.setMovingStrategy(new WalkingStrategy());
+        taekwonV.setAttackStrategy(new MissileStrategy());
+
+        atom.setMovingStrategy(new FlyingStrategy());
+        atom.setAttackStrategy(new PunchStrategy());
+
+        System.out.println("My name is " + taekwonV.getName());
         taekwonV.move();
         taekwonV.attack();
 
-        System.out.println("My name is" + atom.getName());
+        System.out.println();
+
+        System.out.println("My name is " + atom.getName());
         atom.move();
         atom.attack();
     }
