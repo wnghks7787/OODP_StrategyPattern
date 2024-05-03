@@ -65,3 +65,5 @@ Many algorithms which can solve same problems are encapsulation and we can just 
 - Strategy: Notice that how can call algorithm outside of the interface / abstract class.
 - ConcreteStrategy: Real Algorithms that noticed in strategy pattern.
 - Context: Use strategy pattern. If needed, it can change concrete strategy, so it provide setter method.
+
+자료 출처: 정인상, 채홍석. *자바 객체지향 디자인 패턴: UML과 GoF 디자인 패턴 핵심 10가지로 배우는*. 한빛미디어.
